@@ -1,0 +1,73 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+nav {
+  height: 50px;
+  background: #212121;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+  margin: 0;
+  list-style: none;
+}
+
+.menu__item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+.menu__link {
+color: #fff;
+font-size: 15px;
+font-weight: 300;
+}
+.subheader{
+  height: 84px;
+  background-color: rgba(0,0,0, .6);
+}
+.subheader .subheader__logo{
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+
+}
+.subheader .subheader__official{
+  font-weight: 400;
+  font-size: 13px;
+  color: #FFFFFF;
+  opacity: .5;
+  margin-top: 6px;
+}
+.subheader__call {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+.subheader__phone{
+  display: block;
+  margin-top: 8px;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+.subheader__btn{
+margin-top: 19px;  
+width: 162px;
+height: 46px;
+background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+border: none;
+border-radius: 4px;
+font-weight: 400;
+font-size: 14px;
+line-height: 46px;
+text-transform: uppercase;
+color: #FFFFFF;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
