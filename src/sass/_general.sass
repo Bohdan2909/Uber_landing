@@ -9,6 +9,9 @@ nav
   background: #212121
   z-index: 2
 
+.hamburger
+  display: none
+
 .menu
   display: flex
   justify-content: space-between
@@ -18,12 +21,13 @@ nav
   &__item
     border-right: 2px dotted black
     padding-right: 28px
+    &:last-child
+      border-right: none
+      
   &__link
     color: #fff
     font-size: 15px
     font-weight: 300
-
-
 
 .subheader
   position: absolute
@@ -66,11 +70,11 @@ nav
     border-radius: 4px
     font-weight: 400
     font-size: 14px
-    line-height: 46px
     text-transform: uppercase
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
     +btn_hover
+
 
 .promo
   min-height: 800px
@@ -133,7 +137,7 @@ nav
     margin-left: 25px
   &__text-title
     font-size: 17px
-    color: $color_blue 
+    color: $color_blue
     font-weight: 400
 .label
   margin: 0 auto
@@ -150,7 +154,7 @@ nav
   &__white
     color: #000
     background-color: #fff
-    
+
 .title
   font-weight: 700
   font-size: 38px
@@ -160,9 +164,8 @@ nav
   color: #222222
   margin-bottom: 16px
   &__white
-    color:#fff
-   
-    
+    color: #fff
+
 .subtitle
   margin-top: 19px
   font-size: 17px
@@ -171,12 +174,10 @@ nav
   color: #222222
   &__white
     color: #fff
-  
- 
 
 .mobile
   min-height: 864px
-  padding: 48px 79px 0
+  padding: 48px 0 79px 0
   background-image: url('../img/mobile_bg.png')
   background-position: center center
   background-repeat: no-repeat
@@ -218,7 +219,7 @@ nav
       bottom: 35px
       // left: 145px
       left: 50%
-      transform: translateX(-50%) // Will be 13px of block (width=26px) 
+      transform: translateX(-50%) // Will be 13px of block (width=26px)
       width: 26px
       height: 26px
       margin: 0 auto
@@ -246,9 +247,6 @@ nav
         &:after, &:before
           background-color: $second-color
 
-
-        
-        
 .auto
   height: 898px
   background-image: url('../img/auto-bg.png')
@@ -295,7 +293,7 @@ nav
     text-align: center
     color: #222222
     text-align: center
-    
+
 .require
   padding: 68px 0 84px 0
   &__block
@@ -345,7 +343,7 @@ nav
           background-position: center center
           background-size: cover
           background-repeat: no-repeat
-          
+
 .world
   position: relative
   min-height: 720px
@@ -367,12 +365,12 @@ nav
     color: #1FBAD6
     cursor: pointer
     text-decoration: none
-  
+
     &:hover
       text-decoration: none
       color: #fff
 
-footer 
+footer
   padding: 14px 23px 39px 23px
   a
     &:hover
@@ -428,7 +426,7 @@ footer
         color: #999
         font-size: 11px
         font-weight: 300
-        text-transform: uppercase 
+        text-transform: uppercase
     &-lang
       display: block
       margin: 0 auto
@@ -436,9 +434,11 @@ footer
       font-size: 11px
       font-weight: 400
       margin-top: 19px
-      text-transform: uppercase 
+      text-transform: uppercase
       text-align: center
   &__mobile
     img
       width: 100px
-      height: 35px    
+      height: 35px
+.xs-visible
+  display: none

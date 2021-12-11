@@ -25,7 +25,7 @@
   <header>
     <nav>
       <div class="container">
-        <ul class="menu"">
+        <ul class="menu">
         <li class=" menu__item">
           <a class="menu__link" href="#">
             Главная
@@ -57,24 +57,30 @@
             </a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
     <div class="subheader">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 offset-md-1">
+          <div class=" col-6 col-md-4 offset-md-1">
             <a class="subheader__logo" href="#">
               <img class="img__logo" src="icons/logo.png" alt="logo">
             </a>
             <div class="subheader__official">Официальный партнер Uber в Москве</div>
           </div>
-          <div class="col-md-2 offset-md-2">
+          <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
             <div class="subheader__call">
               Звоните нам ежедневно
             </div>
             <a class="subheader__phone" href="tel:84957970988">8 495 797 09 88</a>
           </div>
-          <div class="col-md-2">
+          <div class="col-6 col-md-3 col-lg-2">
+            <a class=" xs-visible  subheader__phone" href="tel:84957970988">8 495 797 09 88</a>
             <button class="subheader__btn">заказать звонок</button>
           </div>
         </div>
@@ -85,7 +91,7 @@
   <section class="promo">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
           <h1 class="promo__title">КОМПАНИЯ UBER PARTNERS!</h1>
           <h2 class="promo__subtitle">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
           <div class="promo__descr">
@@ -396,13 +402,13 @@
       <div>
           <div class="footer__mobile">
               <a href="#">
-                  <img src="img/app_store.png" alt="App Store">
+                  <img src="img/app_store.png" alt="app">
               </a>
               <a href="#">
-                  <img src="img/google_play.png" alt="Google play">
+                  <img src="img/google_play.png" alt="Google">
               </a>
               <a href="#">
-                  <img src="img/windows_store.png" alt="Windows store">
+                  <img src="img/windows_store.png" alt="Windows">
               </a>
           </div>
       </div>
@@ -424,6 +430,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
